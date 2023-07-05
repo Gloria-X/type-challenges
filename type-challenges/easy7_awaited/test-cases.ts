@@ -14,5 +14,6 @@ type cases = [
   Expect<Equal<MyAwaited<T>, number>>,
 ];
 
+// 限制类型进入
 // @ts-expect-error
 type error = MyAwaited<number>;
